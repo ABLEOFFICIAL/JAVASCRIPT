@@ -1,5 +1,5 @@
 const companies = [
-    { companyName: "TechNova", category: "Technology", startDate: "2001", endDate: "2015" },
+    { companyName: "TechNova", category: "Technology", startDate: "2001", endDate: "2016" },
     { companyName: "HealthCore", category: "Healthcare", startDate: "1998", endDate: "2019" },
     { companyName: "GreenFuture", category: "Construction", startDate: "2005", endDate: "2023" },
     { companyName: "EduWorld", category: "Education", startDate: "2010", endDate: "2020" },
@@ -12,9 +12,9 @@ const companies = [
   ];
   const ages = [12, 18, 21, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75];
 
-//   filter
 
-//   for loop filter
+
+//   for loop 
 //   const elderly = [];
 
 //   for(i = 0; i < ages.length; i++){
@@ -25,6 +25,7 @@ const companies = [
 // console.log(elderly);
 
 
+//   filter()
 // ES5 filter
 // const elderly =ages.filter(function(age){
 //     if(age >= 40){
@@ -41,7 +42,7 @@ const companies = [
 // const constructionCompanies = companies.filter(company => company.category === 'Construction');
 
 
-// map
+// map()
 // (ES5)
 // const companyNames = companies.map(function(company){
 //     return company.category;
@@ -61,6 +62,22 @@ const companies = [
 // console.log(numgt40squared);
 
 
-// sorts 
-const ascendingages = ages.sort((a,b) => b - a);
-console.log(ascendingages);
+// sorts ()
+// const ascendingages = ages.sort((a,b) => b - a);
+// console.log(ascendingages);
+
+// reduce()
+
+// let ageSum = ages.reduce((total, age) => total + age, 0)
+// console.log(ageSum);
+
+// let totalDates = companies.reduce((total, company) => total + (company.endDate - company.startDate), 0);
+// console.log(totalDates);
+
+let combined = ages
+  .map(age => age ** 2)
+  .filter(age => age >= 1000)
+  .sort((a, b) => b - a)
+  .reduce((total, age) => total + age, 0);
+  
+console.log(combined);
