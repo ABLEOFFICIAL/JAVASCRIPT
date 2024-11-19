@@ -75,9 +75,9 @@ const companies = [
 // console.log(totalDates);
 
 let combined = ages
-  .map(age => age ** 2)
-  .filter(age => age >= 1000)
+  .map(age => age ** 3)
+  .filter(age => age.toString().length >= 5)
   .sort((a, b) => b - a)
   .reduce((total, age) => total + age, 0);
-  
+
 console.log(combined);
