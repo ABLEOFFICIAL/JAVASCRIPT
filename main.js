@@ -74,10 +74,18 @@ const companies = [
 // let totalDates = companies.reduce((total, company) => total + (company.endDate - company.startDate), 0);
 // console.log(totalDates);
 
-let combined = ages
+/*let combined = ages
   .map(age => age ** 3)
   .filter(age => age.toString().length >= 5)
   .sort((a, b) => b - a)
   .reduce((total, age) => total + age, 0);
 
-console.log(combined);
+console.log(combined);*/
+
+let person = {
+  name: 'John',
+  age: 30,
+  summary: `i am ${this.name}`
+}
+
+console.log(person.summary);
