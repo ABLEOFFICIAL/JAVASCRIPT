@@ -1,0 +1,37 @@
+.slider-images {
+    display: flex;
+    overflow: hidden;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.fa-arrow-left, .fa-arrow-right {
+    position: absolute;
+    padding: 2rem;
+    color: #000;
+    background-color: white;
+    width: 1rem;
+    height: 1rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.section {
+    position: relative;
+}
+
+
+.fa-arrow-left {
+    left: 0;
+    top: 45%;
+}
+.fa-arrow-right {
+    right: 0;
+    top: 45%;
+}
