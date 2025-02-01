@@ -14,7 +14,7 @@ const companies = [
 
 
 
-//   for loop 
+  // for loop 
 //   const elderly = [];
 
 //   for(i = 0; i < ages.length; i++){
@@ -82,10 +82,42 @@ const companies = [
 
 console.log(combined);*/
 
-let person = {
-  name: 'John',
-  age: 30,
-  summary: `i am ${this.name}`
+// let person = {
+//   name: 'josh',
+//   age: 30,
+//   get summary() { return  `i am ${this.name}`}
+// }
+
+// console.log(person.summary);
+
+// let triangle = '#';
+
+// for (let i = 1; i <= 7; i++) {
+//   triangle += '#';
+//   console.log(triangle);
+// }
+
+// for(let i = 1; i <= 100; i++) {
+//   if((i % 5 === 0) && (i % 3 === 0)) {
+//     console.log('fizzbuzz');
+//   }else if(i % 3 === 0) {
+//     console.log('fizz');
+//   }else if((i % 5 === 0) && (i % 3 !== 0)){
+//     console.log('buzz');
+//   }else{
+//     console.log(i);
+//   }
+// }
+
+const sumRange = function(a, n) {
+  let result = 1;
+  if(n === 0) {
+    return 1;
+  }
+  while(n > a) {
+    a++;
+    result += a;
+  }
 }
 
-console.log(person.summary);
+console.log(sumRange(1, 3));
