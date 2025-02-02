@@ -6,8 +6,19 @@
     <title>Higher order array</title>
 </head>
 <body>
-    <h1>Higher order array</h1>
+    <h1 id="header">WELCOME</h1>
+    <label for="username">username</label>
+    <input type="text" id="mytext">
+    <input type="submit" value="submit" id="submit">
 
-    <script src="main.js"></script>
+    <script>
+        // let submit = document.getElementById('submit');
+        let header = document.getElementById('header');
+        let myText = document.getElementById('mytext');
+
+        document.getElementById('submit').onclick = function(){
+            header.textContent = `hello ${myText.value}`;
+        }
+    </script>
 </body>
 </html>
